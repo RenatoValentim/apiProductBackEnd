@@ -30,7 +30,7 @@ Install the postman or equivalent
 ```
 * [Download](https://www.postman.com/downloads/) the Postman
 
-### URIs
+## URIs
 
 * **GET ALL**
 
