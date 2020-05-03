@@ -32,19 +32,19 @@ public class ProductResource {
     return repository.findAll();
   }
 
-  @GetMapping(path = "/produto/{id}")
+  @GetMapping(path = "/produtos/{id}")
   public ResponseEntity<Product> listProduct(@PathVariable long id) {
     return repository.findById(id)
       .map(record -> ResponseEntity.ok().body(record))
       .orElse(ResponseEntity.notFound().build());
   }
 
-  @PostMapping(path = "/produto")
+  @PostMapping(path = "/produtos")
   public Product saveProduct(@RequestBody Product product) {
     return repository.save(product);
   }
 
-  @PutMapping(path = "/produto/{id}")
+  @PutMapping(path = "/produtos/{id}")
   public ResponseEntity<Product> update(@PathVariable("id") long id, @RequestBody Product product) {
     return repository.findById(id)
       .map(record -> {
@@ -56,7 +56,7 @@ public class ProductResource {
       }).orElse(ResponseEntity.notFound().build());
   }
 
-  @DeleteMapping(path = "/produto/{id}")
+  @DeleteMapping(path = "/produtos/{id}")
   public ResponseEntity<?> delete(@PathVariable("id") long id) {
     return repository.findById(id)
       .map(record -> {
