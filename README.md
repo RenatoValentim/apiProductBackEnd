@@ -41,23 +41,23 @@ http://localhost:8080/api/produtos
 * **GET to id**
 
 ```bash
-http://localhost:8080/api/produto/{id}
+http://localhost:8080/api/produtos/{id}
 ```
 
 * **POST**
 
 ```bash
-http://localhost:8080/api/produto
+http://localhost:8080/api/produtos
 ```
 
 * **PUT**
 
 ```bash
-http://localhost:8080/api/produto/{id}
+http://localhost:8080/api/produtos/{id}
 ```
 
 * **DELETE**
 
 ```bash
-http://localhost:8080/api/produto/{id}
+http://localhost:8080/api/produtos/{id}
 ```
