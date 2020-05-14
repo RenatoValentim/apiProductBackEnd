@@ -7,6 +7,7 @@ Basic CRUD with Spring Boot and PostgreSQL
 ## Requirements
 
 * **Java 11**
+* **Maven**
 
 ## Build
 
